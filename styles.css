@@ -1,0 +1,366 @@
+/* Estilos globales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Enlaces */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Skip to content */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 20px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 14px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 20px;
+}
+
+/* Header */
+header {
+    background-color: #003366;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* Sección de Introducción */
+#intro {
+    background-color: #0066cc;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+#intro h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#intro p {
+    font-size: 1.1rem;
+}
+
+/* Main content */
+main {
+    padding: 2rem 1rem;
+}
+
+/* Productos */
+#productos {
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#productos h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: #003366;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.producto {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+}
+
+.producto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.producto img {
+    height: 300px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover img {
+    transform: scale(1.05);
+}
+
+.producto h3 {
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    color: #333;
+    font-weight: 600;
+}
+
+.producto p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.producto button {
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.producto button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.05);
+}
+
+.producto button:active {
+    transform: scale(1);
+}
+.precio {
+    font-weight: bold;
+    color: #ff5733; /* Color rojo llamativo */
+    font-size: 1.1em;
+    margin: 5px 0;
+}
+
+
+
+
+/* Reseñas */
+#reseñas {
+    background-color: #f9f9f9;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#reseñas h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.form-reseña {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-reseña .campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-reseña label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-reseña input,
+.form-reseña textarea {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.form-reseña button {
+    background-color: #003366;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-reseña button:hover {
+    background-color: #ffcc00;
+}
+
+/* Contacto */
+#contacto {
+    padding: 2rem 1rem;
+}
+
+#contacto h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.contacto-formulario .campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+.contacto-formulario label {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.contacto-formulario input,
+.contacto-formulario textarea {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.contacto-formulario button {
+    background-color: #003366;
+    color: #fff;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contacto-formulario button:hover {
+    background-color: #ffcc00;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer .contacto ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+footer a {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+footer a:hover {
+    color: #ffcc00;
+}
+
+/* Media Queries (Tablet and Desktop) */
+@media (min-width: 768px) {
+    .productos {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .producto {
+        padding: 2rem;
+    }
+
+    #intro h2 {
+        font-size: 2rem;
+    }
+
+    #productos h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .productos {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #intro h2 {
+        font-size: 2.5rem;
+    }
+
+    #productos h2 {
+        font-size: 2.5rem;
+    }
+}
+/* Media Queries (Desktop) */
+@media (min-width: 1024px) {
+    /* Productos en 3 columnas */
+    .productos {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 3rem;
+    }
+
+    /* Producto */
+    .producto {
+        padding: 2rem;
+    }
+
+    /* Títulos */
+    #intro h2, #productos h2 {
+        font-size: 2.5rem;
+    }
+
+    /* Imágenes de productos */
+    .producto img {
+        max-width: 300px; /* Limitar tamaño de imagen */
+    }
+
+    /* Botón de producto */
+    .producto button {
+        padding: 1.2rem 2.5rem;
+        font-size: 1.1rem;
+    }
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda online de suplementos deportivos de alta calidad para mejorar tu rendimiento y bienestar.">
+    <title>Locura Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" media="all">
+    <!-- Mejoras SEO -->
+    <link rel="canonical" href="https://www.tienda-suplentes.com/">
+</head>
+<body>
+    
+    <a href="#main-content" class="skip-link">Ir al contenido</a>
+
+    <!-- Header -->
+    <header>
+        <h1>Locura Fitness</h1>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    <section id="intro" class="intro">
+        <div class="descripcion">
+            <h2>Bienvenido a nuestra tienda</h2>
+            <p>Descubre nuestros suplementos deportivos diseñados para potenciar tu rendimiento físico. Encuentra productos de alta calidad y mejora tu bienestar.</p>
+        </div>
+    </section>
+
+   
+    <main id="main-content">
+        <section id="productos">
+            <h2>Productos Disponibles</h2>
+            <div class="productos">
+                <!-- Producto 1 -->
+                <div class="producto">
+                    <img src="img/starproteina.jpg" alt="Suplemento 1 de proteína"/> 
+                    <h3>Proteina Star Platinum</h3>
+                    <p>Descripción detallada del suplemento que aumenta la energía.</p>
+                    <p class="precio">Precio: $12.000 ARS</p>
+                    <button>Agregar al carrito</button>
+                </div>
+        
+                <!-- Producto 2 -->
+                <div class="producto">
+                    <img src="img/creatina.png" alt="Suplemento 2 de creatina"/> 
+                    <h3>Creatina Star</h3>
+                    <p>Ideal para mejorar la resistencia muscular y la recuperación.</p>
+                    <p class="precio">Precio: $8.500 ARS</p>
+                    <button>Agregar al carrito</button>
+                </div>
+        
+                <!-- Producto 3 -->
+                <div class="producto">
+                    <img src="img/pre elite.webp" alt="Pre Entreno Elite"/>
+                    <h3>Pre Entreno Elite</h3>
+                    <p>Perfecto para reducir la fatiga muscular.</p>
+                    <p class="precio">Precio: $10.000 ARS</p>
+                    <button>Agregar al carrito</button>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Sección de Reseñas -->
+        <section id="reseñas">
+            <h2>Deja tu reseña</h2>
+            <form action="https://formspree.io/f/xqakbeyy" method="POST" class="form-reseña">
+                <div class="campo">
+                    <label for="nombre">Tu nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Tu reseña:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu reseña" required></textarea>
+                </div>
+                <button type="submit">Enviar reseña</button>
+            </form>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="contacto-formulario">
+            <h2>Contáctanos</h2>
+            <form action="https://formspree.io/f/xqakbeyy" method="POST">
+                <div class="campo">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                </div>
+                <div class="campo">
+                    <label for="correo">Correo electrónico:</label>
+                    <input type="email" id="correo" name="correo" placeholder="Tu correo electrónico" required>
+                </div>
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" required></textarea>
+                </div>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="contacto">
+            <ul>
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
